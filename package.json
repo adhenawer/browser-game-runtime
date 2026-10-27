@@ -1,0 +1,57 @@
+{
+  "name": "browser-game-runtime",
+  "version": "0.1.0",
+  "description": "Engine-neutral browser integration for native and WebAssembly games",
+  "type": "module",
+  "license": "GPL-2.0-or-later",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "src",
+    "examples",
+    "tests",
+    "tsconfig.json",
+    "README.md",
+    "LICENSE",
+    "NOTICE",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/*.test.mjs",
+    "prepack": "npm run build",
+    "test:browser": "npm run build && node --test tests/browser.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@playwright/test": "1.56.1"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "webassembly",
+    "emscripten",
+    "game",
+    "browser",
+    "offline",
+    "assets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adhenawer/browser-game-runtime.git"
+  },
+  "homepage": "https://github.com/adhenawer/browser-game-runtime#readme",
+  "bugs": {
+    "url": "https://github.com/adhenawer/browser-game-runtime/issues"
+  }
+}

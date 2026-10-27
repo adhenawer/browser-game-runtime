@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Browser Game Runtime — Canvas example</title>
+<style>
+  body { max-width: 52rem; margin: 3rem auto; padding: 0 1rem; background:#161c25; color:#eef3fa; font: 1.1rem system-ui; }
+  canvas { display:block; width:100%; background:#202c3c; margin:1rem 0; }
+  button { padding:.6rem 1rem; margin:.25rem; font:inherit; cursor:pointer; }
+  :focus-visible { outline:3px solid #70dbff; outline-offset:3px; }
+</style>
+<h1>Browser Game Runtime</h1>
+<p>A minimal Canvas host. Use arrow keys or WASD to move. The game pauses when you switch tabs or leave the window.</p>
+<button id="resume" disabled>Start / resume</button><button id="pause">Pause</button>
+<button id="save">Save position</button><button id="load">Load position</button>
+<p id="status" role="status">Preparing the first frame…</p>
+<canvas width="640" height="360" tabindex="0" aria-label="Movement playground"></canvas>
+<p>Position is stored locally. No assets or saves leave your browser.</p>
+<script type="module" src="./main.js"></script>
+</html>

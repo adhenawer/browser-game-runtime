@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.tgz
+*.zip
+*.bundle
+test-results/
+playwright-report/
+.DS_Store
+release/

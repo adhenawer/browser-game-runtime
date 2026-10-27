@@ -1,0 +1,11 @@
+Browser Game Runtime
+
+Extracted and generalized from DOOM Classic Browser:
+https://github.com/adhenawer/Doom-classic-browser
+
+The verified streaming reader derives from web/loading.ts. Source-aware action
+state derives from web/input.ts. Local storage derives from web/storage.ts; the offline worker generator derives
+from scripts/offline.mjs. All retain GPL-2.0-or-later licensing.
+This package and its examples are distributed under GPL-2.0-or-later; see LICENSE.
+No game engine, game assets, maps, textures, audio, or commercial content is included.
+Engine and asset licenses remain separate from this package's license.
